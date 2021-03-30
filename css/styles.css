@@ -116,7 +116,7 @@ img {
 }
 .footer .social-links li {
     display: inline-block;
-    margin-left:150px;
+    margin-left:10px;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
 
