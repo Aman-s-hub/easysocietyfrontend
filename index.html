@@ -8,7 +8,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
      <style>
        #cover{
-        background: #222 url("images/apt3.jpg") center center no-repeat;
+        background: #222 url("images/background1.jpg") center center no-repeat;
+        max-width: 100%;
+        max-height: 100%;
        }
        #about{
         background: url("images/bgimage1.jpg") center center no-repeat;
@@ -67,18 +69,17 @@
 
 
    <section id="cover" style="background-color: #0E0736;">
-       <div id="cover-caption">
-           <div class="container">
-               <div class="col-sm-10 col-sm-offset-1">
+       <div id="cover-caption" style="color:black;">
+           <div class="container float-left">
+               <div class="col-sm-6 float-left">
                    <h1><div class="h1" style="font-size:4.5rem;">Welcome to Easy Society</div></h1>
                    <p>EasySociety is all about easing the life of a society resident by connecting them to their society and their workflow.
-                           A Web-App that digitalize and revolutionalize the traditional way of housing.</p>
-                           <form action="residentlogin.php" class="form-inline d-flex justify-content-center">
-                            <button type="submit" class="btn btn-success btn-lg "  id="btn_6" style="color: #F2F1FF; border-color: #F2F1FF; background-color: transparent;">User Login</button>
-                           </form>
-                           <br>
-                           <a href="#what-we-do" class="btn btn-secondary-outline btn-sn" role="button">&darr;</a>
-
+                      A Web-App that digitalize and revolutionalize the traditional way of housing.</p>
+                     <form action="residentlogin.php" class="form-inline d-flex justify-content-center">
+                      <button type="submit" class="btn btn-success btn-lg "  id="btn_6" style="color: black; border-color: black; background-color: transparent;">User Login</button>
+                     </form>
+                     <br>
+                           <!-- <a href="#what-we-do" class="btn btn-secondary-outline btn-sn" role="button">&darr;</a> -->
                </div>
            </div>
        </div>
@@ -92,29 +93,29 @@
              <div class="row">
                      <div class="col-sm-12">
                          <div class="card-group">
-                             <div class="card" style="background-color: #03045E;">
+                             <div class="card" style="background-color: #6477BE;">
                                  <div class="card-block">
                                      <h4 class="card-title">View Announcements</h4>
                                      <h6 class="card-subtitle"></h6>
                                      <i class="bi bi-megaphone" style="font-size: 10rem; color: white;"></i>
                                  </div>
                                  <div class="card-block">
-                                     <a href="residentlogin.php"><button type="button" class="btn btn-success-outline" id="btn_3" style="color: #C0C0C0; border-color: #C0C0C0;">learn more</button></a>
+                                     <a href="residentlogin.php"><button type="button" class="btn btn-success-outline" id="btn_3" style="color: #D2D2D2; border-color: #D2D2D2;">learn more</button></a>
                                  </div>
                              </div>
 
-                             <div class="card" style="background-color: #03045E;">
+                             <div class="card" style="background-color: #6477BE;">
                               <div class="card-block">
                                   <h4 class="card-title">Know Your Visitors</h4>
                                   <h6 class="card-subtitle"></h6>
                               <i class="bi bi-person-badge" style="font-size: 10rem; color: white;"></i>
                             </div>
                               <div class="card-block">
-                                <a href="residentlogin.php"><button type="button" class="btn btn-success-outline" id="btn_4" style="color: #C0C0C0; border-color: #C0C0C0;">learn more</button></a>
+                                <a href="residentlogin.php"><button type="button" class="btn btn-success-outline" id="btn_4" style="color: #D2D2D2; border-color: #D2D2D2;">learn more</button></a>
                               </div>
                              </div>
 
-                             <div class="card" style="background-color: #03045E;">
+                             <div class="card" style="background-color: #6477BE;">
                                  <div class="card-block">
                                      <h4 class="card-title">Manage Maintanance</h4>
                                      <h6 class="card-subtitle"></h6>
@@ -122,7 +123,7 @@
                                  </div>
                                  <div class="card-block">
 
-                                    <a href="residentlogin.php"><button type="button" class="btn btn-success-outline" id="btn_5" style="color: #C0C0C0; border-color: #C0C0C0;">learn more</button></a>
+                                    <a href="residentlogin.php"><button type="button" class="btn btn-success-outline" id="btn_5" style="color: #D2D2D2; border-color: #D2D2D2;">learn more</button></a>
                                  </div>
                              </div>
                          </div>
@@ -198,8 +199,8 @@
       this.style.backgroundColor = "transparent";
     });
     document.getElementById("btn_3").addEventListener("mouseout", function(){
-      this.style.color = "#C0C0C0";
-      this.style.border = "#C0C0C0 1px solid";
+      this.style.color = "#D2D2D2";
+      this.style.border = "#D2D2D2 1px solid";
     });
     document.getElementById("btn_4").addEventListener("mouseover", function(){
       this.style.color = "#F2F1FF";
@@ -207,8 +208,8 @@
       this.style.backgroundColor = "transparent";
     });
     document.getElementById("btn_4").addEventListener("mouseout", function(){
-      this.style.color = "#C0C0C0";
-      this.style.border = "#C0C0C0 1px solid";
+      this.style.color = "#D2D2D2";
+      this.style.border = "#D2D2D2 1px solid";
     });
     document.getElementById("btn_5").addEventListener("mouseover", function(){
       this.style.color = "#F2F1FF";
@@ -216,8 +217,17 @@
       this.style.backgroundColor = "transparent";
     });
     document.getElementById("btn_5").addEventListener("mouseout", function(){
-      this.style.color = "#C0C0C0";
-      this.style.border = "#C0C0C0 1px solid";
+      this.style.color = "#D2D2D2";
+      this.style.border = "#D2D2D2 1px solid";
+    });
+    document.getElementById("btn_6").addEventListener("mouseover", function(){
+      this.style.color = "#616161";
+      this.style.border = "#616161 1px solid"
+      this.style.backgroundColor = "transparent";
+    });
+    document.getElementById("btn_6").addEventListener("mouseout", function(){
+      this.style.color = "black";
+      this.style.border = "black 1px solid";
     });
   </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
