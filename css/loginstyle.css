@@ -4,5 +4,22 @@ body{
 
 #right{
 	right:0;
-	background-color:#0E0736;
+	background-color:#BAA3FF;
+	color:black;
+	border-radius: 1rem;
+	padding-bottom:1.5rem;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.form-control::-moz-placeholder {
+  color: #000000;
+}
+.form-control:-ms-input-placeholder {
+  color: #000000;
+}
+.form-control::-webkit-input-placeholder {
+  color: #000000;
 }

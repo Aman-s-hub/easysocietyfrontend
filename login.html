@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="css/styles.css">
 
   </head>
-  <body  style="background-color: black">
-    <div class="container row mx-auto">
+  <body background="images/login.jpg">
+    <div class="container-fluid row" style="padding-right:0;padding-left:0;margin-right:0;margin-left:0;">
         <nav class="navbar navbar-dark fixed-top bg-inverse navbar-full navbar-expand-lg ml-auto row" id="nav-main" style="background-color: #0E0736;">
          <a href="#" class="navbar-brand col-lg-4 col-6">EasySociety</a>
          <button class="navbar-toggler col-lg-8 col" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,19 +63,31 @@
            </ul>
           </div>
         </nav>
-      <div class="container row d-flex justify-content-center" style="margin-top:3.5rem;">
-        <div class="col-sm-6">
-          <div class="centered">
-          <img src="images/apt3logo.jpg" alt="Avatar Men">
-          </div>
-        </div>
-        <div class="col-sm-6" id="right">
+      <div class="container-fluid row mx-auto" style="margin-top:3.5rem;">
+        <div class="col-12 col-sm-4 offset-sm-4" id="right">
           <div>
+          <div class="d-flex justify-content-center">
+            <i class="bi bi-person-circle" style="font-size:3rem;"></i>
+          </div>
           <h1 class="h1 d-flex justify-content-center">Sign In </h1>
           <div class="form-group d-flex justify-content-center" style="background-color: transparent;">
-            <form method="post" action="authenticateuser.php" style="margin-top: 40px">
-            <input class="form-control col-12" type="text" name="username" placeholder="Username.."required style="color:#F2F1FF;margin-bottom:1rem;background-color: transparent;">
-            <input class="form-control col-12" type="password"name="password" placeholder="Password.."required style="color:#F2F1FF;margin-bottom:1rem;background-color: transparent;">
+            <form method="post" action="authenticateuser.php" style="margin-top: 15px">
+              <div class="row d-flex">
+                <div class="col-2">
+                  <i class="bi bi-person" style="font-size:1.5rem;"></i>
+                </div>
+                <div class="col-10">
+                  <input class="form-control col-12" type="text" name="username" placeholder="Username.."required style="color:#F2F1FF;margin-bottom:1rem;background-color: transparent;border: black 1px solid;">
+                </div>
+              </div>
+              <div class="row d-flex">
+                <div class="col-2">
+                  <i class="bi bi-lock" style="font-size:1.5rem;"></i>
+                </div>
+                <div class="col-10">
+                  <input class="form-control col-12" type="password"name="password" placeholder="Password.."required style="color:#F2F1FF;margin-bottom:1rem;background-color: transparent;border: black 1px solid;">
+                </div>
+              </div>
             <input type="submit" value="Submit" class="btn btn-primary col-12 justify-content center" required>
             </form>
           </div>
@@ -94,7 +106,6 @@
     <footer id="footer" class="footer" style="padding-bottom: 0px; padding-top: 10px;">
     <div class="container text-center">
       <h3 class="h3 d-flex justify-content-center">Connnect us!</h3>
-      <!-- End newsletter-form -->
       <ul class="social-links d-flex justify-content-center" style="padding-top: 20px;margin-bottom:10px;">
         <li><a href="#link"><i class="bi bi-twitter"></i></a></li>
         <li><a href="#link"><i class="bi bi-facebook"></i></a></li>
